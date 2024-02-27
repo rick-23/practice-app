@@ -1,0 +1,7 @@
+<div *ngIf="currentCounter !== undefined">
+    <app-child (outputEvent)="handleEvent($event)"></app-child>
+
+    <h3>You set the parent's counter to: {{currentCounter}}</h3>
+
+    <button class="btn btn-primary" (click)="handleStop()">Stop Timer</button>
+</div>
